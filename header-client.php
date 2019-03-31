@@ -84,11 +84,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							});
 
 						</script>
-	   			</div>
+				   </div>
+				
 			   <div class="login">
-			   	   <span><a href="login.html"><img src="images/login.png" alt="" title="login"/></a></span>
+			  
+					<span><a href="login.html"><img src="images/login.png" alt="" title="login"/>
+					</a></span>
 			   </div>
-
+			   <!-- <div class="shopping_cart">
+					<div class="cart">
+						<a href="#" title="View my shopping cart" rel="nofollow"> -->
+						<?php
+						session_start();
+						
+						if(isset($_SESSION['user'])!="")
+						{
+						echo "<h2>Xin chào: ".$_SESSION['user']."</h2><a href='/TH/tuan2_lab3/logout.php'>Logout</a>";
+						}
+						else
+						{
+						echo "<h2>Bạn chưa đăng nhập</h2>
+						<a href='/TH/tuan2_lab3/login.php'>Login</a> - <a href='/TH/tuan2_lab3/register.php'>Register</a>";
+						
+						}
+					?>
+					<!-- </div>
+		      	</div> -->
+			  
 		 	</div>
 			
 		 <div class="clear"></div>
