@@ -139,7 +139,7 @@
 							<div class="rating">
 								<p>Rating:<img src="images/rating.png" alt="" /><span>[3 of 5 Stars]</span></p>
 							</div>
-							<div class="button"><span><a href="#">Add to Cart</a></span></div>
+							<div class="button"><span><a href="/TH/tuan2_lab3/product_detail.php?id=<?php echo $item["ProductID"]; ?>">Thêm vào giỏ</a></span></div>
 							<div class="clear"></div>
 						</div>
 					</div>
@@ -226,8 +226,12 @@
 		            <h2 style="height:50px;"><?php echo $item["ProductName"]; ?></h2>
 		            <p style="height:100px;"><?php echo $item["Description"]; ?></p>
 		            <p><span class="price">SL: <?php echo $item["Quantity"]; ?></span><span class="price"><?php echo $item["Price"] ?>đ</span></p>
-		            <div class="button"><span><img src="images/cart.jpg" alt='' /><a href="preview-3.html" class="cart-button">Thêm giỏ</a></span> </div>
-		            <div class="button"><span><a href="/TH/tuan2_lab3/product_detail.php?id=<?php echo $item["ProductID"]; ?>" class="details">Details</a></span></div>
+		            <div class="button" onclick="location.href='/TH/tuan2_lab3/shopping_cart.php?id=<?php echo $item["ProductID"]; ?>'">
+									<span><img src='images/cart.jpg' alt='' />
+										<a class='cart-button'>Mua hàng</a>
+									</span> 
+								</div>
+		            <div class="button"><span><a href="/TH/tuan2_lab3/product_detail.php?id=<?php echo $item["ProductID"]; ?>" class="details">Chi tiết</a></span></div>
 		         </div>   
 		    	<?php } ?>			
 		    </div>

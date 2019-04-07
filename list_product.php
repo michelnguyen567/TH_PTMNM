@@ -15,7 +15,7 @@
 
   <div class="menu">
       <ul id="dc_mega-menu-orange" class="dc_mm-orange">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="/TH/tuan2_lab3/list_product.php">Home</a></li>
           <li><a href="products.html">Category</a>
             <ul>
         <!-- <li><a href="products.html">Mobile Phones</a>
@@ -131,8 +131,16 @@
             <h2 style="height:50px;"><?php echo $item["ProductName"]; ?></h2>
             <p style="height:100px;"><?php echo $item["Description"]; ?></p>
             <p><span class="price">SL: <?php echo $item["Quantity"]; ?></span><span class='price'><?php echo $item["Price"] ?>đ</span></p>
-            <div class='button'><span><img src='images/cart.jpg' alt='' /><a href='preview-3.html' class='cart-button'>Add to Cart</a></span> </div>
-            <div class='button'><span><a href='preview-3.html' class='details'>Details</a></span></div>
+            <div class="button" onclick="location.href='/TH/tuan2_lab3/shopping_cart.php?id=<?php echo $item["ProductID"]; ?>'">
+              <span><img src='images/cart.jpg' alt='' />
+                <a class='cart-button'>Mua hàng</a>
+              </span> 
+            </div>
+            <div class="button">
+              <span>
+                <a href="/TH/tuan2_lab3/product_detail.php?id=<?php echo $item["ProductID"]; ?>" class="details">Chi tiết</a>
+              </span>
+            </div>
           </div>      
         <?php } ?>
         </div>

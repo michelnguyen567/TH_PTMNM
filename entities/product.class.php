@@ -23,6 +23,8 @@
 		public function save()
 		{
 			//Xử lý upload hình ảnh
+			//tmp_name: biến tạm lưu tên file
+			//name: tên của file trên máy
 			$file_temp = $this->picture['tmp_name'];
 			$user_file = $this->picture['name'];
 			$timestamp = date("Y").date("d").date("h").date("i").date("s");

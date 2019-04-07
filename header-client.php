@@ -20,6 +20,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/nav-hover.js"></script>
 <link href='http://fonts.googleapis.com/css?family=Monda' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Doppio+One' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
 <script type="text/javascript">
   $(document).ready(function($){
     $('#dc_mega-menu-orange').dcMegaMenu({rowItems:'4',speed:'fast',effect:'fade'});
@@ -40,12 +41,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    </form>
 			    </div>
 			    <div class="shopping_cart">
+					<a href="/TH/tuan2_lab3/shopping_cart.php" title="View my shopping cart" rel="nofollow">
+					</a>
 					<div class="cart">
-						<a href="#" title="View my shopping cart" rel="nofollow">
-							<strong class="opencart"> </strong>
-								<span class="cart_title">Cart</span>
-									<span class="no_product">(empty)</span>
-							</a>
+						
 					</div>
 		      	</div>
 		      	<div class="currency" title="currency">
